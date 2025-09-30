@@ -1,3 +1,6 @@
+// ------------------ 29-2-------------------------
+
+
 // using default value in pramiter so that if argument is missing result not came Undifined or NaN
 
 function Add(num1=1,num2=1){
@@ -14,6 +17,9 @@ Add(5)
 // in {} => use defult paramiter {}
 //  mainly defult data type most likely use for your non-primitive data type and it's basacically depend on you pramiter data type .
 
+// ------------------ 29-4+5-------------------------
+
+
 //  Function type
 
 // 1. function expression
@@ -23,6 +29,7 @@ return num3+num4
 }
  let ans=add1(5,8)
 //  console.log(ans)
+
 
 
  
@@ -44,6 +51,10 @@ let ans2=divided(9,3);
 //  empty function
 const squre=x=>(x*x);
 // console.log(squre(9))
+
+
+// ------------------ 29-6-------------------------
+
 
 // spread 
 
@@ -76,4 +87,81 @@ let sumation1=(p,q)=>p+q;
 
 let Digit1=[4,50];
 
-console.log(sumation1(...Digit1))
+// console.log(sumation1(...Digit1))
+
+
+// ------------------ 29-7-------------------------
+
+// object and array destructuing
+
+// you can console object property direct
+let {Brand}={
+    Brand:'Audi',
+    Color:'Black',
+    Model:'991'
+}
+// console.log(Brand)
+
+// you can also change the value name
+
+let {Brand:porshe}={
+    Brand:'Audi',
+    Color:'Black',
+    Model:'991'
+}
+// console.log(porshe)
+
+// another way
+let car={
+    company:'Audi',
+    Color:'Black',
+    Model:'991'
+}
+let { company }=car;
+
+// console.log(Brand)
+
+
+// you can also use this in array
+
+let [two,five]=[2,5,8,10,6]
+
+// console.log(five)
+
+// question : is there any way to console any item from an array?
+
+
+// ------------------ 29-8-------------------------
+ 
+let mobile={
+    name:'oppo',
+    price :'25k',
+    Color:'black',
+
+}
+
+// you can print key name
+let price=Object.keys(mobile);
+// console.log(price)
+
+// you can print key  value
+let value=Object.values(mobile);
+// console.log(value)
+
+// you can print key  value
+let entries=Object.entries(mobile);
+// console.log(entries)
+
+// you can do some operation
+
+
+
+Object.seal(mobile)
+// you cannot delete but you can change the value of the property
+Object.freeze(mobile)
+// you cannot change and cannot add 
+
+delete mobile.price
+mobile.name='samsung'
+
+// console.log(mobile)

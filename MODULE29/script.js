@@ -145,7 +145,7 @@ let price=Object.keys(mobile);
 // console.log(price)
 
 // you can print key  value
-let value=Object.values(mobile);
+// let value=Object.values(mobile);
 // console.log(value)
 
 // you can print key  value
@@ -165,3 +165,17 @@ delete mobile.price
 mobile.name='samsung'
 
 // console.log(mobile)
+
+// ------------------ 29-9-------------------------
+
+// how to work loop in object
+
+let codeName={
+    name:'js',
+    fullName:'javaScript',
+    year:'1985'
+}
+for(key in codeName){
+    let keyValue=codeName[key]
+    console.log(key,keyValue)
+}
